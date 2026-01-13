@@ -84,22 +84,8 @@
     @keyframes blink { 0% { opacity: 0; } 50% { opacity: 1; } 100% { opacity: 0; } }
   </style>
 
-  <script>
-    function abrirModal() {
-      document.getElementById("modalSobre").style.display = "flex";
-    }
+  <script src="script.js">
 
-    function fecharModal() {
-      document.getElementById("modalSobre").style.display = "none";
-    }
-
-    // Fechar se clicar fora da janela
-    window.onclick = function(event) {
-      var modal = document.getElementById("modalSobre");
-      if (event.target == modal) {
-        modal.style.display = "none";
-      }
-    }
   </script>
 
 </body>
