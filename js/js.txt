@@ -1,0 +1,50 @@
+function abrirModal() {
+      document.getElementById("modalSobre").style.display = "flex";
+    }
+
+    function fecharModal() {
+      document.getElementById("modalSobre").style.display = "none";
+    }
+
+    // Fechar se clicar fora da janela
+    window.onclick = function(event) {
+      var modal = document.getElementById("modalSobre");
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+
+ //TESTANDO PARTE DO PROJETO
+
+
+function abrirTeste() {
+      document.getElementById("modalTeste").style.display = "flex";
+    }
+
+    function fecharTeste() {
+      document.getElementById("modalTeste").style.display = "none";
+    }
+
+    // Fechar se clicar fora da janela
+    window.onclick = function(event) {
+      var teste = document.getElementById("modalTeste");
+      if (event.target == teste) {
+        teste.style.display = "none";
+      }
+    }
+
+
+    //BANCO DE DADOS TESTE
+
+
+
+    /* === CONFIGURAÇÃO SUPABASE === */
+
+// Cole aqui a URL que você achou (Project URL)
+const SUPABASE_URL = 'https://zavidiffwkvhttjfnlmq.supabase.co'; 
+
+// Cole aqui o código que começa com sb_publishable... (da sua print)
+const SUPABASE_KEY = 'sb_publishable_h2uqRttVKq87Ba4w6XImHw_p5KhNhJ1';
+
+// Inicializa o cliente
+const supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
